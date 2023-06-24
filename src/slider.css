@@ -1,0 +1,135 @@
+.aboutus {
+    background: radial-gradient(254.35% 164.14% at 100.02% 96.30%, rgba(63, 34, 0, 0.98) 0%, rgba(207, 166, 126, 0.76) 26.60%, rgba(206, 172, 140, 0.74) 46.28%, rgba(117, 67, 46, 0.38) 100%);
+    padding-bottom: 100px;
+}
+
+.aboutustext {
+    text-align: center;
+    padding-top: 170px;
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 50px;
+    color: var(--text-colorone);
+}
+
+.slidertext {
+    color: white;
+    margin-right: 70px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+
+.slider {
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.sliderimage {
+    width: 350px;
+    height: 300px;
+    margin-right: 50px;
+    margin-left: 40px;
+    border-radius: 10px;
+
+}
+
+.right-arrow {
+    position: absolute;
+    top: 53%;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 53%;
+    left: 5px;
+    font-size: 2rem;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 2s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 2s;
+    transform: scale(1.00);
+
+}
+
+.carouesel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+@media screen and (max-width:850px) {
+    .sliderimage {
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .right-arrow {
+        right: 5px;
+    }
+
+    .carouesel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-arrow {
+        top: 37%;
+    }
+
+    .left-arrow {
+        top: 37%;
+    }
+
+    .slidertext {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+    }
+
+
+}
+
+@media screen and (max-width:420px) {
+    .sliderimage {
+        width: 250px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .right-arrow {
+        right: 5px;
+    }
+
+    .right-arrow {
+        top: 25%;
+    }
+
+    .left-arrow {
+        top: 25%;
+    }
+
+}

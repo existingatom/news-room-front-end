@@ -1,0 +1,78 @@
+.explorebox {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: var(--background-three);
+}
+
+.journalist {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-size: larger;
+}
+
+.write-up {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+
+}
+
+.comments {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.gmail {
+
+    padding-top: 10px;
+}
+
+.number {
+    padding-top: 10px;
+
+}
+
+.g-mail,
+.phoneno {
+    color: black;
+}
+
+.dp-journalist {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.dp {
+    padding-left: 10px;
+    font-size: 40px;
+}
+
+.likes {
+    font-size: 22.5px;
+    padding-left: 20px;
+    padding-top: 7px;
+    display: flex;
+    align-items: start;
+}
+
+.like {
+    color: red;
+    cursor: pointer;
+}
+
+.notlike {
+    color: white;
+    cursor: pointer;
+}

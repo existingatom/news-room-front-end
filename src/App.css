@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-one: #8E5B45;
+  --background-two: #CFA67E;
+  --background-three: #ECCFA4;
+  --text-colorone: #3F2200;
+  --back-groundlanding : radial-gradient(254.35% 164.14% at 100.02% 96.30%,rgba(250, 183, 105, 0.98) 0%,rgba(207, 166, 126, 0.76) 26.60%,rgba(206, 172, 140, 0.74) 46.28%,rgba(117, 67, 46, 0.38) 100%);
+  --back-ground: radial-gradient(254.35% 164.14% at 100.02% 96.30%, rgba(63, 34, 0, 0.98) 0%, rgba(207, 166, 126, 0.76) 26.60%, rgba(206, 172, 140, 0.74) 46.28%, rgba(117, 67, 46, 0.38) 100%);
+}

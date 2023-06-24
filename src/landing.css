@@ -1,0 +1,49 @@
+.firstbg {
+    padding-top : 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--back-groundlanding);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-bottom: 10px solid #8E5B45;
+    padding-bottom: 100px;
+  }
+  
+  .mrg {
+    color: #000;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Libre Caslon Display";
+    padding-bottom: 200px;
+  }
+  
+  .hrg {
+    padding-bottom: 100px;
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Libre Caslon Display";
+  }
+  
+  .button {
+    width: 241px;
+    height: 68px;
+    border-radius: 50px;
+    background: var(--background-three);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .button-content {
+    
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-size: 29px;
+    font-family: Inter;
+    align-items: center;
+    justify-content: center;
+  }

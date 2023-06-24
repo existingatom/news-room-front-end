@@ -1,0 +1,121 @@
+.navigation {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    background-color: var(--background-one);
+    color: white;
+    border-bottom: 10px solid var(--background-three);
+
+}
+
+.logo {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 5px;
+    margin-top: 35px;
+}
+
+.logoexpanded {
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.navigation-menu {
+    font-family: 'Outfit', sans-serif;
+}
+
+.navigation-menu ul {
+    display: flex;
+    padding: 0%;
+
+}
+
+.navigation-menu li {
+    list-style-type: none;
+    margin: 0 2rem;
+
+}
+
+.navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.navigation-menu li:hover {
+    background-color: var(--background-one);
+}
+
+.hamburger {
+    border: 0;
+    height: 32.5px;
+    width: 40px;
+    padding: 0.5rem;
+    background-color: var(--background-one);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.textnav {
+    color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburger:hover {
+        background-color: var(--background-two);
+        border-radius: 50%;
+        border: 1px solid black
+    }
+
+    .navigation-menu ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0%;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid var(--background-three);
+        border-bottom: 10px solid var(--background-three);
+        background-color: var(--background-one);
+
+
+    }
+
+    .navigation-menu li {
+        text-align: center;
+        margin: 0%;
+    }
+
+    .navigation-menu li a {
+        color: white;
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .navigation-menu li:hover {
+        background-color: var(--background-two);
+    }
+
+    .navigation-menu.expanded ul {
+        display: block;
+
+    }
+
+}
