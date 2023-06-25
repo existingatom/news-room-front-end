@@ -88,8 +88,8 @@ function Footer() {
           <span className="credit">
             Created By <a href="/">NEWSROOM</a> |
           </span>
-          <span className="far fa-copyright">
-            {' '}
+          <span><Icon icon="mdi:copyright" className="copyright"/>
+            {''}
             2023 All rights reserved.
           </span>
         </center>

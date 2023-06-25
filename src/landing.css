@@ -15,7 +15,7 @@
     text-align: center;
     font-size: 64px;
     font-family: "Libre Caslon Display";
-    padding-bottom: 200px;
+    padding-bottom: 150px;
   }
   
   .hrg {
@@ -35,6 +35,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    cursor: pointer;
   }
   
   .button-content {
@@ -42,7 +43,7 @@
     flex-shrink: 0;
     color: #000;
     text-align: center;
-    font-size: 29px;
+    font-size: 15px;
     font-family: Inter;
     align-items: center;
     justify-content: center;

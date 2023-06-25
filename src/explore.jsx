@@ -34,7 +34,7 @@ function Explore() {
               number="tel:123456789"
             />
           </div>
-          <button onClick={handleExploreClick} className="buttonexplore">
+          <button onClick={()=> {handleExploreClick(); window.scrollTo(0, 700);}} className="buttonexplore">
             See last 10 posts
           </button>
         </div>
@@ -49,7 +49,7 @@ export default Explore;
 
 function Exploreextended({ handleGoBack }) {
   const Submit = () => {
-    alert('going back to home');
+    alert('Go back to home?');
   };
 
   return (
@@ -136,7 +136,7 @@ function Exploreextended({ handleGoBack }) {
             number="tel:123456789"
           />
         </div>
-        <button onClick={handleGoBack} className="buttonexplore">
+        <button onClick={()=> {handleGoBack(); window.scrollTo(0, 0); Submit();}} className="buttonexplore">
           Go back
         </button>
       </div>

@@ -26,6 +26,11 @@ footer {
   padding: 0 0px;
 }
 
+.copyright {
+  position: relative;
+  top: 2px;
+}
+
 .content1 .text {
   font-size: 2.5rem;
   font-weight: 600;

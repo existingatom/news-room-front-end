@@ -16,16 +16,16 @@ function Navbar() {
             <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
                 <ul>
                     <li>
-                        <Link className="textnav" to="/explore" >Explore</Link>
+                        <Link className="textnav" to="/explore" onClick={() => { setIsNavExpanded(!isNavExpanded); }}>Explore</Link>
                     </li>
                     <li>
-                        <Link className="textnav" to="/slider" >About Us</Link>
+                        <Link className="textnav" to="/slider" onClick={() => { setIsNavExpanded(!isNavExpanded); }}>About Us</Link>
                     </li>
                     <li>
-                        <Link  className="textnav" to="/learn">Courses</Link>
+                        <Link  className="textnav" to="/learn" onClick={() => { setIsNavExpanded(!isNavExpanded); }}>Courses</Link>
                     </li>
                     <li>
-                        <Link className="textnav" to="/" >Contact Us</Link>
+                        <Link className="textnav" to="/contact" onClick={() => { setIsNavExpanded(!isNavExpanded); }}>Contact Us</Link>
                     </li>
                 </ul>
             </div>

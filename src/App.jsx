@@ -16,20 +16,27 @@ const App = () => {
     if (location.pathname === "/explore") {
       return {
         h: "Welcome to News-Room!!",
-        name: "To know is to learn and practice. We have a long way to go for it is just the beginning!!.",
-        but: "Contact us"
+        name: "Swipe down to start exploring!",
+        but: "Go down to fill the contact us form."
       };
     } else if (location.pathname === "/slider") {
       return {
-        h: "Welcome to News-Room!!",
-        name: "Take the first step towards your dream. Your next step will be in your favourite news agency.",
-        but: "Contact us"
+        h: "Swipe down to know us and our tiny steps!!",
+        name: "Free tip: Take the first step towards your dream. Your next step will be in your favourite news agency.",
+        but: "Go down to fill the contact us form."
       };
     } else if (location.pathname === "/learn") {
       return {
-        h: "hfhewj",
-        name: "Learning now gets easier for now there are people who will hold you tight not letting you fall even on those darkest nights!!.",
-        but: "Contact us"
+        h: "Swipe down to know about various courses!",
+        name: "Learning now gets easier for now there are people who will hold you tight not letting you fall even on those darkest nights!!",
+        but: "Go down to fill the contact us form."
+      };
+    }
+    else if (location.pathname === "/contact") {
+      return {
+        h: "Have a doubt or a query? We are here for you!",
+        name: "Go down and fill our contact us form. We will reach back with you within two days.",
+        but: "Go down to fill the contact us form."
       };
     }
   };
