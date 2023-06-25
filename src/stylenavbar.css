@@ -11,20 +11,12 @@
 
 }
 
-.logo {
+.logo, .logoexpanded {
     border-radius: 50%;
     height: 150px;
     width: 150px;
     margin-left: 5px;
     margin-top: 35px;
-}
-
-.logoexpanded {
-    border-radius: 50%;
-    height: 115px;
-    width: 115px;
-    margin-left: 5px;
-    margin-top: 5px;
 }
 
 .navigation-menu {
@@ -116,6 +108,14 @@
     .navigation-menu.expanded ul {
         display: block;
 
+    }
+
+    .logoexpanded {
+        border-radius: 50%;
+        height: 115px;
+        width: 115px;
+        margin-left: 5px;
+        margin-top: 5px;
     }
 
 }

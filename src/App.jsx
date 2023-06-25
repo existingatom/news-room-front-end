@@ -15,8 +15,8 @@ const App = () => {
   const getLandingProps = () => {
     if (location.pathname === "/explore") {
       return {
-        h: "Welcome to News-Room!!",
-        name: "Swipe down to start exploring!",
+        h: "Swipe down to start exploring!",
+        name: "Dadi ka nuska: Reading through others' writeups help one to improve faster!",
         but: "Go down to fill the contact us form."
       };
     } else if (location.pathname === "/slider") {
@@ -28,7 +28,7 @@ const App = () => {
     } else if (location.pathname === "/learn") {
       return {
         h: "Swipe down to know about various courses!",
-        name: "Learning now gets easier for now there are people who will hold you tight not letting you fall even on those darkest nights!!",
+        name: "A secret: Learning now gets easier for now there are people who will hold you tight not letting you fall even on those darkest nights!!",
         but: "Go down to fill the contact us form."
       };
     }
@@ -36,6 +36,13 @@ const App = () => {
       return {
         h: "Have a doubt or a query? We are here for you!",
         name: "Go down and fill our contact us form. We will reach back with you within two days.",
+        but: "Go down to fill the contact us form."
+      };
+    }
+    else{
+      return {
+        h: "Welcome to News-Room!!",
+        name: "This is a hidden jewel for all the aspiring journalists. To dive in, click on the various options available at the top of the page!",
         but: "Go down to fill the contact us form."
       };
     }
