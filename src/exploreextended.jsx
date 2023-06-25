@@ -1,7 +1,7 @@
 import Props from './exploreprops'
 import './explore.css'
 
-function exploreextended() {
+function Exploreextended() {
     const Submit = () => { alert('going back to home') }
     return (<>
         <div className="exploreextended">
@@ -22,4 +22,4 @@ function exploreextended() {
     );
 }
 
-export default exploreextended
+export default Exploreextended

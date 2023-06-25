@@ -1,18 +1,43 @@
-import { Icon } from '@iconify/react'
-import './footer.css'
+import React, { useState } from 'react';
+import { Icon } from '@iconify/react';
+import './footer.css';
 
 function Footer() {
+  const [isSent, setIsSent] = useState(false);
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setIsSent(true);
+    setTimeout(() => {
+      setIsSent(false);
+    }, 1000);
+  };
+
   return (
     <footer>
       <div className="main-content">
         <div className="left box">
           <h2 className="lineneed">NEWSROOM</h2>
           <div className="content">
-            <div className="content2">For more information, please contact us through our contact form. We are trying to get better with each step. Help us improve!</div>
+            <div className="content2">
+              For more information, please contact us through our contact form. We are trying to get better with each step. Help us improve!
+            </div>
             <div className="social">
-              <div className="fb"><a href="https://facebook.com/newsroom"><Icon icon="ic:baseline-facebook" className="fbicon" /></a></div>
-              <div className="fb"><a href="https://instagram.com/newsroom"><Icon icon="mdi:instagram" className="fbicon" /></a></div>
-              <div className="fb"><a href="https://youtube.com/c/newsroom"><Icon icon="mdi:youtube" className="fbicon" /></a></div>
+              <div className="fb">
+                <a href="https://facebook.com/newsroom">
+                  <Icon icon="ic:baseline-facebook" className="fbicon" />
+                </a>
+              </div>
+              <div className="fb">
+                <a href="https://instagram.com/newsroom">
+                  <Icon icon="mdi:instagram" className="fbicon" />
+                </a>
+              </div>
+              <div className="fb">
+                <a href="https://youtube.com/c/newsroom">
+                  <Icon icon="mdi:youtube" className="fbicon" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -39,7 +64,7 @@ function Footer() {
           <h2 className="lineneed">Contact us</h2>
           <div className="content">
             <div className="last">
-              <form action="#">
+              <form onSubmit={handleFormSubmit}>
                 <div className="email">
                   <div className="text">Email *</div>
                   <input type="email" required className="inputs" />
@@ -49,7 +74,9 @@ function Footer() {
                   <input type="text" required className="inputs" />
                 </div>
                 <div className="btn">
-                  <button type="submit" className="send">Send</button>
+                  <button type="submit" className={`send ${isSent ? 'sent' : ''}`}>
+                    {isSent ? 'Sent!' : 'Send'}
+                  </button>
                 </div>
               </form>
             </div>
@@ -58,8 +85,13 @@ function Footer() {
       </div>
       <div className="bottom">
         <center>
-          <span className="credit">Created By <a href="/">NEWSROOM</a> | </span>
-          <span className="far fa-copyright"></span><span> 2023 All rights reserved.</span>
+          <span className="credit">
+            Created By <a href="/">NEWSROOM</a> |
+          </span>
+          <span className="far fa-copyright">
+            {' '}
+            2023 All rights reserved.
+          </span>
         </center>
       </div>
     </footer>

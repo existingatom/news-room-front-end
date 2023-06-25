@@ -2,10 +2,7 @@ import { Icon } from '@iconify/react'
 import './stylenavbar.css'
 import logo from '/logo.png'
 import { useState } from "react";
-
-
-
-
+import { Link} from 'react-router-dom'
 function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
@@ -19,16 +16,16 @@ function Navbar() {
             <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
                 <ul>
                     <li>
-                        <a href="" className="textnav">Explore</a>
+                        <Link className="textnav" to="/explore" >Explore</Link>
                     </li>
                     <li>
-                        <a href="" className="textnav">About Us</a>
+                        <Link className="textnav" to="/slider" >About Us</Link>
                     </li>
                     <li>
-                        <a href="" className="textnav">Courses</a>
+                        <Link  className="textnav" to="/learn">Courses</Link>
                     </li>
                     <li>
-                        <a href="" className="textnav">Contact Us</a>
+                        <Link className="textnav" to="/" >Contact Us</Link>
                     </li>
                 </ul>
             </div>
