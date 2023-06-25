@@ -246,3 +246,12 @@ footer {
     width: 280px;
   }
 }
+.send {
+ 
+  transition: all 0.3s;
+}
+
+.send.sent {
+  background-color: white;
+  cursor: default;
+}
