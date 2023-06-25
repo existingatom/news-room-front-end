@@ -4,5 +4,5 @@ This project provides a platform that brings in a good news for all to be and wa
 
 To have a look:
 1. Clone the repository.
-2. Use pnpm install
+2. Use pnpm install > pnpm run dev.
 3. The website will be live on : http://localhost:5173/
