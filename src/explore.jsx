@@ -34,7 +34,7 @@ function Explore() {
               number="tel:123456789"
             />
           </div>
-          <button onClick={()=> {handleExploreClick(); window.scrollTo(0, 700);}} className="buttonexplore">
+          <button onClick={()=> {handleExploreClick(); window.scrollTo(0, 660);}} className="buttonexplore">
             See last 10 posts
           </button>
         </div>
@@ -49,7 +49,7 @@ export default Explore;
 
 function Exploreextended({ handleGoBack }) {
   const Submit = () => {
-    alert('Go back to home?');
+    alert('Go back to see only two posts again?');
   };
 
   return (

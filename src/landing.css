@@ -13,17 +13,21 @@
   .mrg {
     color: #000;
     text-align: center;
-    font-size: 64px;
-    font-family: "Libre Caslon Display";
-    padding-bottom: 150px;
+    font-size: 55px;
+    padding-bottom: 100px;
+    font-family: 'Caprasimo', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .hrg {
     padding-bottom: 100px;
     color: #000;
     text-align: center;
-    font-size: 30px;
-    font-family: "Libre Caslon Display";
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .button {
@@ -43,7 +47,7 @@
     flex-shrink: 0;
     color: #000;
     text-align: center;
-    font-size: 15px;
+    font-size: 12.5px;
     font-family: Inter;
     align-items: center;
     justify-content: center;
