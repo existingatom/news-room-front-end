@@ -197,7 +197,7 @@ footer {
 }
 
 .bottom center a {
-  color: #000;
+  color: var(--background-three);
   text-decoration: none;
 }
 
@@ -212,6 +212,10 @@ footer {
 .lineneed {
   border-bottom: 3px solid var(--background-two);
 }
+
+
+
+
 
 @media screen and (max-width: 900px) {
   footer {
@@ -237,6 +241,7 @@ footer {
   .center {
     margin-left: 5px;
   }
+
 }
 
 @media screen and (max-width: 450px) {
