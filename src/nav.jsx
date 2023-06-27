@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom'
 function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
-        <body className={isNavExpanded ? "blue" : "notblue"}>
-        <nav className='navigation'>
+        <nav className={isNavExpanded ? "navigationexpanded" : "navigation"}>
             <section >
                 <img src={logo} className={isNavExpanded ? "logoexpanded" : "logo"} />
             </section>
@@ -34,7 +33,6 @@ function Navbar() {
                 </ul>
             </div>
         </nav>
-        </body>
     );
 }
 

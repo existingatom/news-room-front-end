@@ -119,4 +119,18 @@
         margin-bottom: 15px;
     }
 
+    .navigationexpanded {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0.5rem 0rem;
+        background-color: var(--background-one);
+        color: white;
+        border-bottom: 10px solid var(--background-three);
+        margin-bottom: 320px;
+        
+    }
+
 }
