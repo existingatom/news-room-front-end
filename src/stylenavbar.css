@@ -1,5 +1,5 @@
 .navigation {
-    height: 60px;
+    height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@
     background-color: var(--background-one);
     color: white;
     border-bottom: 10px solid var(--background-three);
-
+    
 }
 
 .logo, .logoexpanded {
@@ -16,7 +16,7 @@
     height: 150px;
     width: 150px;
     margin-left: 5px;
-    margin-top: 35px;
+    margin-top: 5px;
 }
 
 .navigation-menu {
@@ -112,10 +112,11 @@
 
     .logoexpanded {
         border-radius: 50%;
-        height: 115px;
-        width: 115px;
+        height: 90px;
+        width: 90px;
         margin-left: 5px;
-        margin-top: 5px;
+        margin-top: 0px;
+        margin-bottom: 15px;
     }
 
 }

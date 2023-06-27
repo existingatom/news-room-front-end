@@ -34,6 +34,22 @@ function Explore() {
               number="tel:123456789"
             />
           </div>
+          <div className="explore1">
+          <Props
+            journalist="Vidhi"
+            writeup="Exploring the Future of Quantum Computing: Quantum computing has emerged as a revolutionary field with the potential to redefine computational capabilities. This report delves into the principles, advancements, and challenges of quantum computing. It explores the concept of qubits, quantum algorithms, and the anticipated impact on various sectors, including cryptography, optimization, and drug discovery. Additionally, it investigates the technological hurdles and ethical considerations associated with quantum computing, such as data privacy and cybersecurity. Understanding the prospects and limitations of this nascent technology is essential for policymakers, researchers, and industry leaders to harness its immense potential effectively."
+            email="https://mail.google.com/mail/?view=cm&fs=1&to=abc@example.com"
+            number="tel:123456789"
+          />
+        </div>
+        <div className="explore1">
+          <Props
+            journalist="Adhiraj"
+            writeup="Exploring the Future of Quantum Computing: Quantum computing has emerged as a revolutionary field with the potential to redefine computational capabilities. This report delves into the principles, advancements, and challenges of quantum computing. It explores the concept of qubits, quantum algorithms, and the anticipated impact on various sectors, including cryptography, optimization, and drug discovery. Additionally, it investigates the technological hurdles and ethical considerations associated with quantum computing, such as data privacy and cybersecurity. Understanding the prospects and limitations of this nascent technology is essential for policymakers, researchers, and industry leaders to harness its immense potential effectively."
+            email="https://mail.google.com/mail/?view=cm&fs=1&to=abc@example.com"
+            number="tel:123456789"
+          />
+        </div>
           <button onClick={()=> {handleExploreClick(); window.scrollTo(0, 660);}} className="buttonexplore">
             See last 10 posts
           </button>
@@ -48,9 +64,6 @@ function Explore() {
 export default Explore;
 
 function Exploreextended({ handleGoBack }) {
-  const Submit = () => {
-    alert('Go back to see only two posts again?');
-  };
 
   return (
     <>
@@ -136,8 +149,8 @@ function Exploreextended({ handleGoBack }) {
             number="tel:123456789"
           />
         </div>
-        <button onClick={()=> {handleGoBack(); window.scrollTo(0, 0); Submit();}} className="buttonexplore">
-          Go back
+        <button onClick={()=> {handleGoBack(); window.scrollTo(0, 660)}} className="buttonexplore">
+          See Less
         </button>
       </div>
     </>

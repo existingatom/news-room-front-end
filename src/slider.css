@@ -12,7 +12,7 @@
 }
 
 .slidertext {
-    color: white;
+    color: black;
     margin-right: 70px;
     text-align: justify;
     font-size: 20px;
@@ -43,7 +43,7 @@
     top: 53%;
     right: 30px;
     font-size: 2rem;
-    color: white;
+    color: black;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -54,7 +54,7 @@
     top: 53%;
     left: 5px;
     font-size: 2rem;
-    color: white;
+    color: black;
     z-index: 10;
     cursor: pointer;
     user-select: none;

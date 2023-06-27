@@ -6,7 +6,8 @@ function Learn() {
     <div className="learn-container">
       <div className="learn-heading">LEARN</div>
       <div className="cards">
-      <div className="card">
+      <a href="https://www.futurelearn.com/courses/exploring-journalism-and-reporting" className="non-u">
+        <div className="card">
           <img className="card__image" src="1.jpg" alt="" />
           <div className="card__content">
             <p><b>Introduction to Journalism: </b>An overview of the principles and practices of journalism, covering topics such as news gathering, writing, and ethics...</p>
@@ -17,6 +18,8 @@ function Learn() {
             </div>
           </div>
         </div>
+        </a>
+        <a href="https://en.unesco.org/investigative-journalism" className="non-u">
         <div className="card">
           <img className="card__image" src="business-g8f970a822_640.jpg" alt="" />
           <div className="card__content">
@@ -28,6 +31,8 @@ function Learn() {
             </div>
           </div>
         </div>
+        </a>
+        <a href="https://study.com/academy/lesson/what-is-broadcast-journalism-definition-history.html" className="non-u">
         <div className="card">
           <img className="card__image" src="3.jpg" alt="" />
           <div className="card__content">
@@ -39,6 +44,8 @@ function Learn() {
             </div>
           </div>
         </div>
+        </a>
+        <a href="https://www.tandfonline.com/journals/rdij20" className="non-u">
         <div className="card">
           <img className="card__image" src="4.jpeg" alt="" />
           <div className="card__content">
@@ -50,6 +57,8 @@ function Learn() {
             </div>
           </div>
         </div>
+        </a>
+        <a href="https://www.bbc.co.uk/bitesize/guides/zqt7k7h/revision/1" className="non-u">
         <div className="card">
           <img className="card__image" src="5.jpg" alt="" />
           <div className="card__content">
@@ -61,6 +70,8 @@ function Learn() {
             </div>
           </div>
         </div>
+        </a>
+        <a href="https://reutersinstitute.politics.ox.ac.uk/sites/default/files/2017-12/The%20Ethics%20of%20Journalism%20-%20indivdual%2C%20institutional%20and%20cultural%20influences_Extract.pdf" className="non-u">
         <div className="card">
           <img className="card__image" src="gavel-g6bd503da7_640.jpg" alt="" />
           <div className="card__content">
@@ -72,6 +83,8 @@ function Learn() {
             </div>
           </div>
         </div>
+        </a>
+        <a href="https://wan-ifra.org/2020/11/media-laws-in-india/" className="non-u">
         <div className="card">
           <img className="card__image" src="7.png" alt="" />
           <div className="card__content">
@@ -83,17 +96,20 @@ function Learn() {
             </div>
           </div>
         </div>
-        <div className="card">
-          <img className="card__image" src="8.jpg" alt="" />
-          <div className="card__content">
-            <p><b>International Reporting:</b> Focuses on reporting on global issues and events, covering topics such as foreign correspondents, cross-cultural communication, and international...</p>
-          </div>
-          <div className="card__info">
-            <div>
-              <a href="https://www.pulitzer.org/prize-winners-by-category/210" className="card__link">See more</a>
+        </a>
+        <a href="https://www.pulitzer.org/prize-winners-by-category/210" className="non-u">
+          <div className="card">
+            <img className="card__image" src="8.jpg" alt="" />
+            <div className="card__content">
+              <p><b>International Reporting:</b> Focuses on reporting on global issues and events, covering topics such as foreign correspondents, cross-cultural communication, and international...</p>
+            </div>
+            <div className="card__info">
+              <div>
+                <a href="https://www.pulitzer.org/prize-winners-by-category/210" className="card__link">See more</a>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
@@ -101,4 +117,3 @@ function Learn() {
 
 export default Learn;
 
-      
