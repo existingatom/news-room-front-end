@@ -1,4 +1,5 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter,Routes, Route, useLocation } from "react-router-dom";
 import './App.css'
 import Footer from './footer'
 import Landing from './landing'
@@ -9,7 +10,7 @@ import { SliderText } from './slidertext'
 import Explore from './explore'
 import Learn from './learn'
 
-const App = () => {
+export default function App() {
   const location = useLocation();
 
   const getLandingProps = () => {
@@ -69,4 +70,5 @@ const App = () => {
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
