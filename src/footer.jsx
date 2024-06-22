@@ -5,6 +5,51 @@ import './footer.css';
 function Footer() {
   const [isSent, setIsSent] = useState(false);
 
+  const [user, setUser] = useState({
+    email: "",
+    message: ""
+  }
+  );
+  let name, value;
+  const getUserData = () => {
+    name = event.target.name;
+    value = event.target.value;
+
+    setUser({...user, [name]: value});
+  };
+
+  const postData = async (e) => {
+    e.preventDefault();
+    const{email, message} = user;
+    if(email && message){
+      
+       const res = await fetch(
+      "https://newsroom-form-default-rtdb.firebaseio.com/messagedata.json",
+        {
+        method: "POST",
+        headers : {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          message
+        }),
+        }
+    );
+    if(res){
+      setUser({
+        email: "",
+        message: "",
+      });
+      alert("Sent!");
+    }
+  }
+  else
+  {
+    alert("Please fill in the details");
+  }
+  };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     setIsSent(true);
@@ -64,18 +109,18 @@ function Footer() {
           <h2 className="lineneed">Contact us</h2>
           <div className="content">
             <div className="last">
-              <form onSubmit={handleFormSubmit}>
+              <form onSubmit={handleFormSubmit} method="POST">
                 <div className="email">
                   <div className="text">Email *</div>
-                  <input type="email" required className="inputs" />
+                  <input type="email" required className="inputs" name="email" value={user.email} onChange={getUserData}/>
                 </div>
                 <div className="msg">
                   <div className="text">Message *</div>
-                  <input type="text" required className="inputs" />
+                  <input type="text" required className="inputs" name="message" value={user.message} onChange={getUserData}/>
                 </div>
                 <div className="btn">
-                  <button type="submit" className={`send ${isSent ? 'sent' : ''}`}>
-                    {isSent ? 'Sent!' : 'Send'}
+                  <button type="submit" className="send" onClick={postData}>
+                    Send
                   </button>
                 </div>
               </form>
