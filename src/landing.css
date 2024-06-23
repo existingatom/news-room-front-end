@@ -7,23 +7,27 @@
     background: var(--back-groundlanding);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-bottom: 10px solid #8E5B45;
-    padding-bottom: 100px;
+    padding-bottom: 125px;
   }
   
   .mrg {
     color: #000;
     text-align: center;
-    font-size: 64px;
-    font-family: "Libre Caslon Display";
-    padding-bottom: 150px;
+    font-size: 55px;
+    padding-bottom: 110px;
+    font-family: 'Caprasimo', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .hrg {
-    padding-bottom: 100px;
+    padding-bottom: 110px;
     color: #000;
     text-align: center;
-    font-size: 30px;
-    font-family: "Libre Caslon Display";
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .button {
@@ -43,7 +47,7 @@
     flex-shrink: 0;
     color: #000;
     text-align: center;
-    font-size: 15px;
+    font-size: 12.5px;
     font-family: Inter;
     align-items: center;
     justify-content: center;

@@ -5,17 +5,18 @@
 
 .aboutustext {
     text-align: center;
-    padding-top: 170px;
-    font-family: 'Lexend Giga', sans-serif;
+    padding-top: 50px;
+    font-family: 'Caprasimo', cursive;
     font-size: 50px;
     color: var(--text-colorone);
 }
 
 .slidertext {
-    color: white;
+    color: black;
     margin-right: 70px;
     text-align: justify;
     font-size: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -42,7 +43,7 @@
     top: 53%;
     right: 30px;
     font-size: 2rem;
-    color: white;
+    color: black;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -53,7 +54,7 @@
     top: 53%;
     left: 5px;
     font-size: 2rem;
-    color: white;
+    color: black;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -96,11 +97,11 @@
     }
 
     .right-arrow {
-        top: 37%;
+        top: 30%;
     }
 
     .left-arrow {
-        top: 37%;
+        top: 30%;
     }
 
     .slidertext {
@@ -125,11 +126,11 @@
     }
 
     .right-arrow {
-        top: 25%;
+        top: 20%;
     }
 
     .left-arrow {
-        top: 25%;
+        top: 20%;
     }
 
 }

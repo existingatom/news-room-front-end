@@ -1,5 +1,5 @@
-import aditi from '/aditi.png'
-import pragyashree from '/pragyashree.png'
+import aditi from '/aditi.webp'
+import pragyashree from '/pragyashree.webp'
 
 export const SliderImage = [
     {
