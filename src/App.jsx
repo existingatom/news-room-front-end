@@ -1,14 +1,15 @@
-import ReactDOM from "react-dom/client";
-import { BrowserRouter,Routes, Route, useLocation } from "react-router-dom";
-import './App.css'
-import Footer from './footer'
-import Landing from './landing'
-import Navbar from './nav.jsx'
-import Slider from './slider.jsx'
-import { SliderImage } from './sliderimage'
-import { SliderText } from './slidertext'
-import Explore from './explore'
-import Learn from './learn'
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import './App.css';
+import Footer from './footer';
+import Landing from './landing';
+import Navbar from './nav.jsx';
+import Slider from './slider.jsx';
+import { SliderImage } from './sliderimage';
+import { SliderText } from './slidertext';
+import Explore from './explore';
+import Learn from './learn';
+import PasswordLoginWithFirebase from './login/PasswordLoginWithFirebase'; // Import the login component
 
 export default function App() {
   const location = useLocation();
@@ -47,7 +48,7 @@ export default function App() {
         but: "Go down to fill the contact us form."
       };
     }
-    else{
+    else {
       return {
         h: "Welcome to News-Room!!",
         name: "This is a hidden jewel for all the aspiring journalists. To dive in, click on the various options available at the top of the page!",
@@ -58,17 +59,18 @@ export default function App() {
 
   return (
     <>
-      <Navbar />
-      <Landing {...getLandingProps()} />
+      {location.pathname !== '/auth' && <Navbar />}
+      {location.pathname !== '/auth' && <Landing {...getLandingProps()} />}
       <Routes>
         <Route path="/explore" element={<Explore />} />
         <Route path="/slider" element={<Slider slides={SliderImage} words={SliderText} />} />
         <Route path="/learn" element={<Learn />} />
+        <Route path="/auth/*" element={<PasswordLoginWithFirebase />} /> {/* Add login routes */}
       </Routes>
-      <Footer />
+      {location.pathname !== '/auth' && <Footer />}
     </>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(<BrowserRouter><App /></BrowserRouter>);

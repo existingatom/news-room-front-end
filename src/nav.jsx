@@ -1,13 +1,15 @@
-import { Icon } from '@iconify/react'
-import './stylenavbar.css'
-import logo from '/logo.png'
-import { useState } from "react";
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Icon } from '@iconify/react';
+import './stylenavbar.css';
+import logo from '/logo.png';
+
 function Navbar() {
-    const [isNavExpanded, setIsNavExpanded] = useState(false)
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
+
     return (
         <nav className={isNavExpanded ? "navigationexpanded" : "navigation"}>
-            <section >
+            <section>
                 <img src={logo} className={isNavExpanded ? "logoexpanded" : "logo"} />
             </section>
             <button className="hamburger" onClick={() => { setIsNavExpanded(!isNavExpanded); }}>
@@ -30,10 +32,13 @@ function Navbar() {
                     <li>
                         <Link className="textnav" to="/contact" onClick={() => { setIsNavExpanded(!isNavExpanded); }}>Contact Us</Link>
                     </li>
+                    <li>
+                        <Link className="textnav" to="/auth" onClick={() => { setIsNavExpanded(!isNavExpanded); }}>Sign In/Sign Up</Link>
+                    </li>
                 </ul>
             </div>
         </nav>
     );
 }
 
-export default Navbar
+export default Navbar;
