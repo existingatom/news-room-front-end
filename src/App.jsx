@@ -9,7 +9,7 @@ import { SliderImage } from './sliderimage';
 import { SliderText } from './slidertext';
 import Explore from './explore';
 import Learn from './learn';
-import PasswordLoginWithFirebase from './login/PasswordLoginWithFirebase'; // Import the login component
+//import PasswordLoginWithFirebase from './login/PasswordLoginWithFirebase'; // Import the login component
 
 export default function App() {
   const location = useLocation();
@@ -65,7 +65,7 @@ export default function App() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/slider" element={<Slider slides={SliderImage} words={SliderText} />} />
         <Route path="/learn" element={<Learn />} />
-        <Route path="/auth/*" element={<PasswordLoginWithFirebase />} /> {/* Add login routes */}
+        
       </Routes>
       {location.pathname !== '/auth' && <Footer />}
     </>

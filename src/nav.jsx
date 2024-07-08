@@ -32,9 +32,7 @@ function Navbar() {
                     <li>
                         <Link className="textnav" to="/contact" onClick={() => { setIsNavExpanded(!isNavExpanded); }}>Contact Us</Link>
                     </li>
-                    <li>
-                        <Link className="textnav" to="/auth" onClick={() => { setIsNavExpanded(!isNavExpanded); }}>Sign In/Sign Up</Link>
-                    </li>
+                    
                 </ul>
             </div>
         </nav>
