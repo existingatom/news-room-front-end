@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
+import { useAuth0 } from "@auth0/auth0-react";
 import './stylenavbar.css';
 import logo from '/logo.png';
 
 function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+    const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
     return (
         <nav className={isNavExpanded ? "navigationexpanded" : "navigation"}>
@@ -32,7 +34,13 @@ function Navbar() {
                     <li>
                         <Link className="textnav" to="/contact" onClick={() => { setIsNavExpanded(!isNavExpanded); }}>Contact Us</Link>
                     </li>
-                    
+                    <li className="auth-button">
+                        {!isAuthenticated ? (
+                            <button className="textnav" onClick={() => loginWithRedirect()}>Log In</button>
+                        ) : (
+                            <button className="textnav" onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button>
+                        )}
+                    </li>
                 </ul>
             </div>
         </nav>

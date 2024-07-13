@@ -1,5 +1,5 @@
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import Footer from './footer';
 import Landing from './landing';
@@ -9,7 +9,7 @@ import { SliderImage } from './sliderimage';
 import { SliderText } from './slidertext';
 import Explore from './explore';
 import Learn from './learn';
-//import PasswordLoginWithFirebase from './login/PasswordLoginWithFirebase'; // Import the login component
+import Auth from './auth.jsx';
 
 export default function App() {
   const location = useLocation();
@@ -65,12 +65,9 @@ export default function App() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/slider" element={<Slider slides={SliderImage} words={SliderText} />} />
         <Route path="/learn" element={<Learn />} />
-        
+        <Route path="/auth" element={<Auth />} />
       </Routes>
       {location.pathname !== '/auth' && <Footer />}
     </>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<BrowserRouter><App /></BrowserRouter>);

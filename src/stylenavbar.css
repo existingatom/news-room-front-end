@@ -1,4 +1,4 @@
-.navigation, .navigationexpanded{
+.navigation, .navigationexpanded {
     height: 80px;
     width: 100%;
     display: flex;
@@ -8,7 +8,6 @@
     background-color: var(--background-one);
     color: white;
     border-bottom: 10px solid var(--background-three);
-    
 }
 
 .logo, .logoexpanded {
@@ -21,24 +20,26 @@
 
 .navigation-menu {
     font-family: 'Outfit', sans-serif;
+    display: flex; /* Ensure items are displayed in a flex layout */
+    align-items: center; /* Align items vertically */
 }
 
 .navigation-menu ul {
     display: flex;
-    padding: 0%;
-
+    padding: 0;
+    margin-left: auto; /* Pushes the login/logout button to the right */
 }
 
 .navigation-menu li {
     list-style-type: none;
     margin: 0 2rem;
-
 }
 
 .navigation-menu li a {
     text-decoration: none;
     display: block;
     width: 100%;
+    color: white; /* Default color for nav links */
 }
 
 .navigation-menu li:hover {
@@ -59,21 +60,20 @@
     display: none;
 }
 
-.textnav {
-    color: white;
-
+.textnav.auth-button {
+    color: brown; /* Changes the color of the login/logout button to brown */
+    margin-right: 20px; /* Adds some right margin for spacing */
 }
 
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
-
     }
 
     .hamburger:hover {
         background-color: var(--background-two);
         border-radius: 50%;
-        border: 1px solid black
+        border: 1px solid black;
     }
 
     .navigation-menu ul {
@@ -86,8 +86,6 @@
         border-top: 1px solid var(--background-three);
         border-bottom: 10px solid var(--background-three);
         background-color: var(--background-one);
-
-
     }
 
     .navigation-menu li {
@@ -107,7 +105,6 @@
 
     .navigation-menu.expanded ul {
         display: block;
-
     }
 
     .logoexpanded {
@@ -130,7 +127,5 @@
         color: white;
         border-bottom: 10px solid var(--background-three);
         margin-bottom: 320px;
-        
     }
-
 }
